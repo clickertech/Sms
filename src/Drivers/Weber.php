@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Packages\SMSDriver;
+namespace Clickertech\Sms\Drivers;
 
 use GuzzleHttp\Client;
-use Clickertech\Sms\Contracts\Driver;
 use Illuminate\Support\Facades\Log;
+use Clickertech\Sms\Contracts\Driver;
 
 class Weber extends Driver
 {
