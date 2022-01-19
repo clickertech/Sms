@@ -1,0 +1,82 @@
+{
+    "name": "clickertech/sms",
+    "description": "This package help you to send sms with templateid  from your laravel project",
+    "keywords": [
+        "sms",
+        "laravel sms gateway",
+        "laravel textlocal",
+        "laravel twilio",
+        "laravel link mobility",
+        "laravel kavenegar",
+        "laravel melipayamak",
+        "laravel smsir",
+        "laravel tsms",
+        "laravel farazsms",
+        "laravel SmsGateWay24",
+        "laravel SMS gateway me"
+    ],
+    "homepage": "https://github.com/clickertech/sms",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinod Vishwakarma",
+            "email": "info@clickertech.in",
+            "homepage": "https://github.com/clickervinod",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/http": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "aws/aws-sdk-php": "^3.87",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "kavenegar/php": "^1.2",
+        "laravel/legacy-factories": "^1.0",
+        "mediaburst/clockworksms": "^2.0",
+        "melipayamak/php": "^1.0.0",
+        "orchestra/testbench": "^5.0|^6.0",
+        "phpunit/phpunit": "^9.3",
+        "smsgatewayme/client": "^0.0.1",
+        "twilio/sdk": "^6.0",
+        "vimeo/psalm": "^4.0",
+        "sms77/api": "^v2.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clickertech\\Sms\\": "src/"
+        },
+        "files": [
+            "src/Helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Clickertech\\Sms\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Clickertech\\Sms\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Clickertech\\Sms\\Facades\\Sms"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
